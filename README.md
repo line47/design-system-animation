@@ -8,11 +8,11 @@ In this exercise, Scott Weber and John French set out to explore the potential v
 ## Why explore adding animation?
 {:.ds-h2}
 
-When used correctly, motion and animation can broaden the toolkit designers and developers have to help enrich digital services. It can help give a user confirmation that a task has been completed, or let them know that things are happening in the background.
+When used correctly, motion and animation can broaden the toolkit designers and developers have to **help enrich digital services**. It can help give a user confirmation that a task has been completed, or let them know that things are happening in the background.
 
-Animation can be used as a part of a larger strategy to improve inclusivity and accessibility of services by adding another layer of context to digital interactions. It can help to highlight connections between elements and information in real time or provide simulated haptic feedback when a button is pressed or selected.
+Animation can be used as a part of a larger strategy to **improve inclusivity and accessibility of services** by adding another layer of context to digital interactions. It can help to highlight connections between elements and information in real time or provide simulated haptic feedback when a button is pressed or selected.
 
-For our work at the Centers for Medicare and Medicaid, defining a standardized framework for animation in line with the CMS Design System will allow dozens of teams and projects to use contribute to improving animations standards together across the agency. This will lead to consistent, reliable implementation of animation across CMS digital services.
+For our work at the Centers for Medicare and Medicaid, **defining a standardized framework for animation in line with the CMS Design System** will allow dozens of teams and projects to use contribute to improving animations standards together across the agency. This will lead to consistent, reliable implementation of animation across CMS digital services.
 
 ## Defining the interactions
 {:.ds-h2}
