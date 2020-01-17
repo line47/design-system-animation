@@ -4,7 +4,7 @@ function reset() {
 
 function newAlert() {
   document.getElementById("add_message").innerHTML =
-    '<div role="alert" aria-live="polite" class="ds-c-alert ds-u-animate-fade--in"><div class="ds-c-alert__body"><h3 class="ds-c-alert__heading">Informative status</h3><p class="ds-c-alert__text">Lorem ipsum dolor sit <a href="javascript:void(0);">link text</a>, consectetur adipiscing elit, sed do eiusmod.</p></div></div>';
+    '<div role="alert" aria-live="polite" class="ds-c-alert ds-u-animate-fade--in ds-u-animate-speed--slow"><div class="ds-c-alert__body"><h3 class="ds-c-alert__heading">Informative status</h3><p class="ds-c-alert__text">Lorem ipsum dolor sit <a href="javascript:void(0);">link text</a>, consectetur adipiscing elit, sed do eiusmod.</p></div></div>';
 }
 
 function newButton() {

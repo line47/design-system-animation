@@ -1,6 +1,5 @@
-# Ad Hoc Design Surge 1 - CSS Animation
-
 1/17/2020
+
 In this exercise, Scott Weber and John French set out to explore the potential value of adding animation and motion directives into the CMS Design System. Currently, there is no framework or guidance for animation within a design system. **We wanted to spend two days figuring out if that would be valuable and how it would need to work to be successful.**
 
 ## Why explore adding animation?
@@ -40,8 +39,8 @@ We made a number of governance decisions around the usage of animations in the d
 For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. . 
 
 
-<button onclick="reset()">Reset</button>
-<button onclick="newAlert()">add alert (slow)</button>
-<button onclick="newModal()">add modal (medium)</button>
-<button onclick="newButton()">add button (fast)</button>
+<button onclick="reset()" class="ds-c-button">Reset</button>
+<button onclick="newAlert()" class="ds-c-button">add alert (slow)</button>
+<button onclick="newModal()" class="ds-c-button">add modal (medium)</button>
+<button onclick="newButton()" class="ds-c-button">add button (fast)</button>
 <div id="add_message"></div>
