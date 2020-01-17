@@ -41,17 +41,17 @@ We made a number of governance decisions around the usage of animations in the d
 * We will recommend only using one animation class per element to prevent unpredictable and inconsistent behavior.
 
 ## General animation guidelines
-* Animation shouldn't be an afterthought
-    * Consider animation options early on in the design process
+* Animation should be considered early on in the process
+* Animation should enhance the UX and serve a purpose
+* Animation should feel natural in context of the interaction
 
 ## Example - Fade In
 {:.ds-h2}
 
 For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. . 
 
-
-
 ### Guidelines
+* 
 
 <button onclick="reset()" class="ds-c-button">Reset</button>
 <button onclick="newAlert()" class="ds-c-button">add alert (slow)</button>
