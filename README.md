@@ -38,3 +38,10 @@ We made a number of governance decisions around the usage of animations in the d
 ## Example - Fade In
 
 For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. . 
+
+
+<button onclick="reset()">Reset</button>
+<button onclick="newAlert()">add alert (slow)</button>
+<button onclick="newModal()">add modal (medium)</button>
+<button onclick="newButton()">add button (fast)</button>
+<div id="add_message"></div>
