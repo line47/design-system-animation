@@ -52,9 +52,7 @@ In order to validate our assumptions around the impact of implementing animation
 * Longer durations should be used for more complex animations (Ex: moving object on the screen and page transitions)
 * Duration for mobile devices should be shorter for smaller wearable devices and longer for tablets
 
-## Example - Fade In
-
-
+## Example - Fade
 
 For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. . 
 
@@ -64,6 +62,24 @@ Use the fade in utility class to fade an element on to the screen.
 
 **Format**: `ds-u-animate-fade--[in|out]`
 
+<button onclick="reset()" class="ds-c-button">Reset</button>
+<button onclick="newAlert()" class="ds-c-button">add alert (slow)</button>
+<button onclick="newModal()" class="ds-c-button">add modal (medium)</button>
+<button onclick="newButton()" class="ds-c-button">add button (fast)</button>
+<div id="add_message"></div>
+
+## Guidance
+
+### Customization
+The following animation Sass variables can be overridden to theme animation properties:
+
+* `$animation-speed-very-slow`
+* `$animation-speed-slow`
+* `$animation-speed-normal`
+* `$animation-speed-fast`
+* `$animation-speed-very-fast`
+* `$animation-timing-function`
+
 ### Do
 * Do use fade in help grab the attention of the user  
 * Do consider the speed and size of the item being faded in 
@@ -71,13 +87,7 @@ Use the fade in utility class to fade an element on to the screen.
 ### Don't 
 * Don't use fade in for large blocks of content (Ex: Don't fade in an entire form) 
 
-<button onclick="reset()" class="ds-c-button">Reset</button>
-<button onclick="newAlert()" class="ds-c-button">add alert (slow)</button>
-<button onclick="newModal()" class="ds-c-button">add modal (medium)</button>
-<button onclick="newButton()" class="ds-c-button">add button (fast)</button>
-<div id="add_message"></div>
-
----
+*****
 Resources
 
 * [Understanding motion](https://material.io/design/motion/understanding-motion.html)
