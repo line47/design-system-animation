@@ -5,11 +5,13 @@
 
 
 
-$animation-speed-slow: 1s;
-$animation-speed-medium: .5s;
-$animation-speed-fast: .2s;
+$animation-speed-very-slow: 500ms;
+$animation-speed-slow: 400ms;
+$animation-speed-normal: 300ms;
+$animation-speed-fast: 200ms;
+$animation-speed-very-fast: 100ms;
 
-$animation-timing-function: linear;
+$animation-timing-function: ease;
 
 @keyframes ds-u-animate-fade--in {
   from { 
@@ -26,12 +28,18 @@ $animation-timing-function: linear;
     animation-duration: $animation-speed-fast;
 }
 
+.ds-u-animate-speed--very-slow {
+    animation-duration: $animation-speed-very-slow;
+  }
 .ds-u-animate-speed--slow {
   animation-duration: $animation-speed-slow;
 }
-.ds-u-animate-speed--medium {
-  animation-duration: $animation-speed-medium;
+.ds-u-animate-speed--normal {
+  animation-duration: $animation-speed-normal;
 }
 .ds-u-animate-speed--fast {
   animation-duration: $animation-speed-fast;
 }
+.ds-u-animate-speed--very-fast {
+    animation-duration: $animation-speed-very-fast;
+  }
