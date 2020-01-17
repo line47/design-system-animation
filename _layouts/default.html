@@ -14,8 +14,8 @@
     <![endif]-->
   </head>
   <body class="ds-base">
-    <div class="wrapper ds-l-container ds-u-measure--wide">
-      <header>
+    <div class="wrapper ds-l-container ds-u-fill--white">
+      <header class="ds-u-measure--wide">
        
         
         {% if site.logo %}
@@ -38,12 +38,12 @@
         </ul>
         {% endif %}
       </header>
-      <section>
+      <section class="ds-u-measure--wide ds-u-margin--auto">
 
       {{ content }}
 
       </section>
-      <footer>
+      <footer class="ds-u-measure--wide ds-u-margin--auto">
           {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
