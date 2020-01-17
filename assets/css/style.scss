@@ -6,6 +6,12 @@
 code {
     background-color: #f1f1f1;
 }
+body {
+  background: #105071 url(/assets/img/penrose.0b7d9eff.png) center center;
+}
+.wrapper {
+  border-bottom:30px #0e7757 solid;
+}
 
 $animation-speed-very-slow: 500ms;
 $animation-speed-slow: 400ms;
