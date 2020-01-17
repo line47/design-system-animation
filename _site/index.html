@@ -26,15 +26,13 @@
   <body class="ds-base">
     <div class="wrapper ds-l-container">
       <header>
-        <h1>Ad Hoc Design Surge 1 - CSS animation</h1>
+       
         
         
 
         <p></p>
 
-        
-        <p class="view"><a href="https://github.com/line47/design-system-animation">View the Project on GitHub <small>line47/design-system-animation</small></a></p>
-        
+      
 
         
 
@@ -42,12 +40,13 @@
       </header>
       <section>
 
-      <h1 id="ad-hoc-design-surge-1---css-animation">Ad Hoc Design Surge 1 - CSS Animation</h1>
+      <h1 class="ds-title" id="ad-hoc-design-surge-1---css-animation">Ad Hoc Design Surge 1 - CSS Animation</h1>
 
-<p>1/17/2020
-In this exercise, Scott Weber and John French set out to explore the potential value of adding animation and motion directives into the CMS Design System. Currently, there is no framework or guidance for animation within a design system. <strong>We wanted to spend two days figuring out if that would be valuable and how it would need to work to be successful.</strong></p>
+<p>1/17/2020</p>
 
-<h2 id="why-explore-adding-animation">Why explore adding animation?</h2>
+<p>In this exercise, Scott Weber and John French set out to explore the potential value of adding animation and motion directives into the CMS Design System. Currently, there is no framework or guidance for animation within a design system. <strong>We wanted to spend two days figuring out if that would be valuable and how it would need to work to be successful.</strong></p>
+
+<h2 class="ds-h2" id="why-explore-adding-animation">Why explore adding animation?</h2>
 
 <p>When used correctly, motion and animation can broaden the toolkit designers and developers have to help enrich digital services. It can help give a user confirmation that a task has been completed, or let them know that things are happening in the background.</p>
 
@@ -55,7 +54,8 @@ In this exercise, Scott Weber and John French set out to explore the potential v
 
 <p>For our work at the Centers for Medicare and Medicaid, defining a standardized framework for animation in line with the CMS Design System will allow dozens of teams and projects to use contribute to improving animations standards together across the agency. This will lead to consistent, reliable implementation of animation across CMS digital services.</p>
 
-<h2 id="defining-the-interactions">Defining the interactions</h2>
+<h2 class="ds-h2" id="defining-the-interactions">Defining the interactions</h2>
+
 <p>We had to start by assessing common UI animation methods that would provide the highest flexibility and value across all components that already exist in the CMS Design System. The idea was essentially to create “animation classes” that can be added to any element in the same way the design system handles CSS utilities now.</p>
 
 <ul>
@@ -83,19 +83,22 @@ In this exercise, Scott Weber and John French set out to explore the potential v
   <li>We will recommend only using one animation class per element to prevent unpredictable and inconsistent behavior.</li>
 </ul>
 
-<h2 id="example---fade-in">Example - Fade In</h2>
+<h2 class="ds-h2" id="example---fade-in">Example - Fade In</h2>
 
 <p>For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. .</p>
 
-<p><button onclick="reset()">Reset</button>
-<button onclick="newAlert()">add alert (slow)</button>
-<button onclick="newModal()">add modal (medium)</button>
-<button onclick="newButton()">add button (fast)</button></p>
+<p><button onclick="reset()" class="ds-c-button">Reset</button>
+<button onclick="newAlert()" class="ds-c-button">add alert (slow)</button>
+<button onclick="newModal()" class="ds-c-button">add modal (medium)</button>
+<button onclick="newButton()" class="ds-c-button">add button (fast)</button></p>
 <div id="add_message"></div>
 
 
       </section>
       <footer>
+          
+        <p class="view"><a href="https://github.com/line47/design-system-animation">View the Project on GitHub <small>line47/design-system-animation</small></a></p>
+        
         
         <p>This project is maintained by <a href="https://github.com/line47">line47</a></p>
         
