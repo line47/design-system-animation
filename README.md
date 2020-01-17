@@ -35,9 +35,27 @@ We came up with the following list:
 
 In addition to defining these set animations, we explored adding variables to allow for control of `animation-durtion` as well as `animation-timing-function` for each animation type. This would give a bot of control on the animation itself while also providing the consistency that variables provide. 
 
-Class structuring would work in a similar way as the CMSDS utilties. For example, you could add the class `ds-u-animate-fade--in` to add the fade in animation to an elment. 
+### Governance / Implementation Details
+
+We made a number of governance decisions around the usage of animations in the design system to ensure that animations are adopted properly and consistently across projects. 
+
+#### Animation Class Naming Conventions
+
+Class structuring would work in a similar way as the CMSDS utilties. 
+
+```
+.ds-u-animate-fade--[ in | out ]
+.ds-u-animate-speed--[ slow | medium | fast ] 
+```
+
+We wanted to follow the pre-existing CMSDS methodologies for naming and using utility classes, while also being able to incorportate required animation properties. In an attempt to keep users code as clean as possible, we decided to prepoulate the animations with default variables, so that a user can simple add the class: `ds-u-animate-fade--in` without havin to also specify the speed. If they do choose to adjust the speed using the `ds-u-animate-speed--` class, the default value can be overriden. 
+
+#### Encouraging Contribution
+
+In an effort to ensure consistent, well-tested behavior across sites that utilize the CMS Design System, we recommend users not attempt to combine animation classes to create new animations. Instead, we would encourage users to work with the CMSDS team to request or contribute new animations into the design system itself. This will help ensure that no unexpected errors or usability problems occur if animation classes are combined. 
 
 In order to validate our assumptions around the impact of implementing animations into the CMSDS, we met with Ad Hoc’s accessibility group and discussed general usability concerns with the healthcare.gov team.
+
 
 ##  Animation guidelines
 
@@ -52,7 +70,32 @@ In order to validate our assumptions around the impact of implementing animation
 * Longer durations should be used for more complex animations (Ex: moving object on the screen and page transitions)
 * Duration for mobile devices should be shorter for smaller wearable devices and longer for tablets
 
+
+## Sample Documentation / Implementation
+
+<header class="ds-u-padding--3 ds-u-sm-padding--6 ds-u-display--block ds-u-fill--gray-lightest">
+	<h1 class="ds-display" id="components.alert">Fade In</h1>
+	<div class="ds-u-clearfix"></div>
+	<div class="ds-u-font-size--small">
+		<a class="ds-u-margin-right--2" href="#guidance">Jump to guidance</a>
+		<a href="https://standards.usa.gov/components/alerts">View related U.S. Web Design Standard</a>
+	</div>
+</header>
+
+<div class="ds-u-padding-x--6 ds-u-padding-y--2" style="border: 1px solid #f1f1f1">
+	This is where the description of fade in as an animation can go.
+	<div class="ds-u-padding--2 ds-u-margin-y--2" style="border: 1px solid #666666">
+		<button onclick="reset()" class="ds-c-button ds-c-button--primary">Reset</button>
+		<button onclick="newAlert()" class="ds-c-button">Fade In: Alert (slow)</button>
+		<button onclick="newModal()" class="ds-c-button">Fade In: Modal (medium)</button>
+		<button onclick="newButton()" class="ds-c-button">Fade In: Button (fast)</button>
+		<div class="ds-u-margin-y--2" id="add_message" style="min-height: 85px; background: #f1f1f1f1;"></div>
+	</div>
+
+</div>
+
 ## Example - Fade
+
 
 For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. . 
 
