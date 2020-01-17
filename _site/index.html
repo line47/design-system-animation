@@ -14,12 +14,12 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Ad Hoc Design Surge 1 - CSS animation" />
 <script type="application/ld+json">
-{"name":"Ad Hoc Design Surge 1 - CSS animation","@type":"WebSite","url":"http://localhost:4000/","headline":"Ad Hoc Design Surge 1 - CSS Animation","@context":"https://schema.org"}</script>
+{"headline":"Ad Hoc Design Surge 1 - CSS Animation","url":"http://localhost:4000/","name":"Ad Hoc Design Surge 1 - CSS animation","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/index_2.css">
-    <link rel="stylesheet" href="/assets/css/style.css?v=10c8de0509aa3226ffe1c18afa2e273efe294ff2">
+    <link rel="stylesheet" href="/assets/css/style.css?v=aa49114043e3fa293754424ef8d28d3ccb6a4a05">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -49,11 +49,11 @@
 
 <h2 class="ds-h2" id="why-explore-adding-animation">Why explore adding animation?</h2>
 
-<p>When used correctly, motion and animation can broaden the toolkit designers and developers have to help enrich digital services. It can help give a user confirmation that a task has been completed, or let them know that things are happening in the background.</p>
+<p>When used correctly, motion and animation can broaden the toolkit designers and developers have to <strong>help enrich digital services</strong>. It can help give a user confirmation that a task has been completed, or let them know that things are happening in the background.</p>
 
-<p>Animation can be used as a part of a larger strategy to improve inclusivity and accessibility of services by adding another layer of context to digital interactions. It can help to highlight connections between elements and information in real time or provide simulated haptic feedback when a button is pressed or selected.</p>
+<p>Animation can be used as a part of a larger strategy to <strong>improve inclusivity and accessibility of services</strong> by adding another layer of context to digital interactions. It can help to highlight connections between elements and information in real time or provide simulated haptic feedback when a button is pressed or selected.</p>
 
-<p>For our work at the Centers for Medicare and Medicaid, defining a standardized framework for animation in line with the CMS Design System will allow dozens of teams and projects to use contribute to improving animations standards together across the agency. This will lead to consistent, reliable implementation of animation across CMS digital services.</p>
+<p>For our work at the Centers for Medicare and Medicaid, <strong>defining a standardized framework for animation in line with the CMS Design System</strong> will allow dozens of teams and projects to use contribute to improving animations standards together across the agency. This will lead to consistent, reliable implementation of animation across CMS digital services.</p>
 
 <h2 class="ds-h2" id="defining-the-interactions">Defining the interactions</h2>
 
@@ -78,11 +78,21 @@
 
 <p>In order to validate our assumptions around the impact of implementing these animations into the CMSDS, we met with Ad Hoc’s accessibility group and discussed general usability concerns with the healthcare.gov team.</p>
 
-<p>We made a number of governance decisions around the usage of animations in the design system to ensure that animations are adopted properly and consistently across projects:</p>
+<h2 id="governance--implementation-details">Governance / Implementation Details</h2>
 
-<ul>
-  <li>We will recommend only using one animation class per element to prevent unpredictable and inconsistent behavior.</li>
-</ul>
+<p>We made a number of governance decisions around the usage of animations in the design system to ensure that animations are adopted properly and consistently across projects.</p>
+
+<h3 id="animation-class-naming-conventions">Animation Class Naming Conventions</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds-u-animate-fade--[ in | out ]
+.ds-u-animate-speed--[ slow | medium | fast ] 
+</code></pre></div></div>
+
+<p>We wanted to follow the pre-existing CMSDS methodologies for naming and using utility classes, while also being able to incorportate required animation properties. In an attempt to keep users code as clean as possible, we decided to prepoulate the animations with default variables, so that a user can simple add the class: <code class="language-plaintext highlighter-rouge">ds-u-animate-fade--in</code> without havin to also specify the speed. If they do choose to adjust the speed using the <code class="language-plaintext highlighter-rouge">ds-u-animate-speed--</code> class, the default value can be overriden.</p>
+
+<h3 id="encouraging-contribution">Encouraging Contribution</h3>
+
+<p>In an effort to ensure consistent, well-tested behavior across sites that utilize the CMS Design System, we recommend users not attempt to combine animation classes to create new animations. Instead, we would encourage users to work with the CMSDS team to request or contribute new animations into the design system itself. This will help ensure that no unexpected errors or usability problems occur if animation classes are combined.</p>
 
 <h2 id="general-animation-guidelines">General animation guidelines</h2>
 <ul>
@@ -91,9 +101,11 @@
   <li>Animation should feel natural in context of the interaction</li>
 </ul>
 
-<h2 class="ds-h2" id="example---fade-in">Example - Fade In</h2>
+<hr />
 
-<p>For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. .</p>
+<h2 class="ds-h2" id="sample-implementation-and-documentation---fade-in">Sample Implementation and Documentation - Fade In</h2>
+
+<p>For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole.</p>
 
 <h3 id="guidelines">Guidelines</h3>
 <ul>
