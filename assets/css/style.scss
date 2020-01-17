@@ -3,7 +3,9 @@
 
 //@import "{{ site.theme }}";
 
-
+code {
+    background-color: #f1f1f1;
+}
 
 $animation-speed-very-slow: 500ms;
 $animation-speed-slow: 400ms;
