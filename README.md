@@ -3,7 +3,8 @@
 
 1/17/2020
 
-In this exercise, Scott Weber and John French set out to explore the potential value of adding animation and motion directives into the CMS Design System. Currently, there is no framework or guidance for animation within a design system. **We wanted to spend two days figuring out if that would be valuable and how it would need to work to be successful.**
+[Scott Weber](https://adhocteam.us/our-team/scott-weber/) and [John French](https://adhocteam.us/our-team/john-french/) set out to explore the potential value of adding animation and motion directives into the [CMS Design System (CMSDS)](https://design.cms.gov/). Currently, there is no framework or guidance for animation within the CMSDS. **We spent two days figuring out if that would be valuable and how it could be successful.**
+{:.ds-text--lead}
 
 ## Why explore adding animation?
 
@@ -11,32 +12,32 @@ When used correctly, motion and animation can broaden the toolkit designers and 
 
 Animation can be used as a part of a larger strategy to improve inclusivity and accessibility of services by adding another layer of context to digital interactions. It can help to highlight connections between elements and information in real time or provide simulated haptic feedback when a button is pressed or selected.
 
-For our work at the Centers for Medicare and Medicaid, defining a standardized framework for animation in line with the CMS Design System will allow dozens of teams and projects to use contribute to improving animations standards together across the agency. This will lead to consistent, reliable implementation of animation across CMS digital services.
+For our work at the Centers for Medicare and Medicaid, defining a standardized framework for animation in line with the CMSDS will allow dozens of teams and projects to use and contribute to the animation standards together. This will lead to consistent, reliable implementation of animation across CMS digital services.
 
-## Defining the interactions
+## Defining motion and animation options
 
-We had to start by assessing common UI animation methods that would provide the highest flexibility and value across all components that already exist in the CMS Design System. The idea was essentially to create “animation classes” that can be added to any element in the same way the design system handles CSS utilities now.
+We started by assessing common UI animation methods that would provide the highest flexibility and value in the CMSDS. The idea was essentially to create “animation classes” that can be added to an element in the same way the design system handles CSS utilities now.
+
+We came up with the following list: 
 
 * Fade In
-* Fade In + Expand
+* Fade In + Grow
 * Fade Out
-* Fade Out + Subtract
+* Fade Out + Shrink
 * Color
-* Jiggle
-* Shake
-* Expand
-* Subtract
-* Subtract + Fade Out
-* Slide
+* Shake (Directional variations)
+* Grow
+* Shrink
+* Shrink + Fade Out
 * Slide (Directional variations)
 * Slide + Fade In
 * Slide + Fade Out
 
-In order to validate our assumptions around the impact of implementing these animations into the CMSDS, we met with Ad Hoc’s accessibility group and discussed general usability concerns with the healthcare.gov team.
+In addition to defining these set animations, we explored adding variables to allow for control of `animation-durtion` as well as `animation-timing-function` for each animation type. This would give a bot of control on the animation itself while also providing the consistency that variables provide. 
 
-We made a number of governance decisions around the usage of animations in the design system to ensure that animations are adopted properly and consistently across projects:
+Class structuring would work in a similar way as the CMSDS utilties. For example, you could add the class `ds-u-animate-fade--in` to add the fade in animation to an elment. 
 
-* We will recommend only using one animation class per element to prevent unpredictable and inconsistent behavior.
+In order to validate our assumptions around the impact of implementing animations into the CMSDS, we met with Ad Hoc’s accessibility group and discussed general usability concerns with the healthcare.gov team.
 
 ##  Animation guidelines
 
@@ -53,7 +54,15 @@ We made a number of governance decisions around the usage of animations in the d
 
 ## Example - Fade In
 
+
+
 For the short scope of the exercise, we decided to implement and provide documents for one of the chosen interactions to create a path forward for adding animation to the design system as a whole. . 
+
+# Fade
+
+Use the fade in utility class to fade an element on to the screen.
+
+**Format**: `ds-u-animate-fade--[in|out]`
 
 ### Do
 * Do use fade in help grab the attention of the user  
